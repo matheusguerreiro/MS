@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega-Sena</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mega-Sena</h1>
+    <h3>gerador</h3>
+  </header>
+  <main>
+    <div class="main-container-fundo">
+      <div class="main-container">
+        <form>
+          <label for="quantidade">Quantos Números vai Jogar?</label>
+          <input type="number" name="quantidade" id="quantidade" min="6" max="15" value="6">
+          <button id="gerar">Gerar</button>
+        </form>
+        <ul class="lista-numeros">
+          <li class="lista-item">07</li>
+          <li class="lista-item">12</li>
+        </ul>
+        <p id="saida"></p>
+        <button id="limpar">Limpar</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>MGF</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

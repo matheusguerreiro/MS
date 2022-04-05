@@ -1,0 +1,163 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: sans-serif
+
+li
+  list-style: none
+
+html, body
+  width: 100%
+  height: 100%
+
+body
+  display: flex
+  flex-direction: column
+
+header
+  background-color: #F2F2F2
+  color: #F21D2F
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border-bottom: 3px solid #261909
+  padding: 12.5px 0
+
+  h1
+    font-size: 50px
+    text-transform: uppercase
+  
+  h3
+    font-family: monospace
+    color: #0477BF
+    font-size: 25px
+    letter-spacing: 12.5px
+    margin-right: -12.5px
+    text-transform: uppercase
+
+main
+  display: flex
+  flex-direction: column
+  flex: 1
+  background-color: #F2F2F2
+  align-items: center
+  justify-content: center
+
+  .main-container-fundo
+    background-color: #F2A03D
+    width: 75%
+    // height: 75%
+    height: fit-content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 12.5px
+    border-radius: 6.25px
+    border: 3px solid #F2D022
+
+    .main-container
+      background-color: #F2F2F2
+      width: 100%
+      height: 100%
+      border-radius: 6.25px
+      border: 1px solid #261909
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 12.5px 0
+
+      form
+        color: #0477BF
+        // background-color: lightgreen
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: baseline
+        width: fit-content
+        margin-bottom: 12.5px
+        column-gap: 25px
+
+        label
+          width: 100%
+          text-align: center
+          font-size: 25px
+          font-weight: bold
+          letter-spacing: 1px
+          margin-right: -1px
+          margin-bottom: 12.5px
+
+        input
+          color: #F21D2F
+          font-weight: bold
+          font-size: 25px
+          padding: 0px 3.125px
+          width: 59.125px
+          border-radius: 6.25px
+          border: 3px solid #F2A03D
+
+        button
+          font-size: 24px
+          padding: 6.25px 12.5px
+          cursor: pointer
+          border-radius: 6.25px
+          border: 3px solid #F2A03D
+          background-color: #FFFFFF
+          color: #F21D2F
+          font-weight: bold
+          &:hover
+            color: #261909
+            background-color: #F2D022
+
+      ul
+        background-color: #F2A03D
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        width: 100%
+        border-top: 3px solid #F2D022
+        border-bottom: 3px solid #F2D022
+        padding: 12.5px
+        column-gap: 12.5px
+        margin-bottom: 12.5px
+
+        li
+          background-color: #FFFFFF
+          font-size: 50px
+          padding: 12.5px
+          border-radius: 50px
+          border: 1px solid #261909
+          color: #F21D2F
+
+      button
+        // margin-top: 12.5px
+        font-size: 24px
+        padding: 6.25px 12.5px
+        cursor: pointer
+        border-radius: 6.25px
+        border: 3px solid #F2A03D
+        background-color: #FFFFFF
+        color: #F21D2F
+        font-weight: bold
+        &:hover
+          color: #261909
+          background-color: #F2D022
+
+footer
+  display: flex
+  background-color: #F2F2F2
+  border-top: 3px solid #261909
+  padding: 12.5px 0
+  justify-content: center
+
+  p
+    color: #0477BF
+    font-size: 25px
+    font-weight: bold
+    letter-spacing: 1px
+    margin-right: -1px
