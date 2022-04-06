@@ -1,2 +1,5 @@
 # MS
-site Mega-Sena
+site Mega-Sena GERADOR
+
+
+https://matheusguerreiro.github.io/MS/
