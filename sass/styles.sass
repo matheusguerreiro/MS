@@ -4,6 +4,10 @@
   box-sizing: border-box
   font-family: sans-serif
 
+@mixin mobile()
+  @media(max-width: 600px)
+    @content
+
 li
   list-style: none
 
@@ -26,8 +30,10 @@ header
   padding: 12.5px 0
 
   h1
+    text-align: center
     font-size: 50px
     text-transform: uppercase
+    margin: 0 12.5px
   
   h3
     font-family: monospace
@@ -58,6 +64,12 @@ main
     border-radius: 6.25px
     border: 3px solid #F2D022
 
+    @include mobile()
+      width: 100%
+      height: fit-content
+      margin: 12.5px 0
+      
+
     .main-container
       background-color: #F2F2F2
       width: 100%
@@ -87,8 +99,7 @@ main
           font-size: 25px
           font-weight: bold
           letter-spacing: 1px
-          margin-right: -1px
-          margin-bottom: 12.5px
+          margin: 0 12.5px 12.5px 12.5px
 
         input
           color: #F21D2F
@@ -124,6 +135,7 @@ main
         border-bottom: 3px solid #F2D022
         padding: 12.5px
         column-gap: 12.5px
+        row-gap: 12.5px
         margin-bottom: 12.5px
 
         li
@@ -133,20 +145,6 @@ main
           border-radius: 50px
           border: 1px solid #261909
           color: #F21D2F
-
-      button
-        // margin-top: 12.5px
-        font-size: 24px
-        padding: 6.25px 12.5px
-        cursor: pointer
-        border-radius: 6.25px
-        border: 3px solid #F2A03D
-        background-color: #FFFFFF
-        color: #F21D2F
-        font-weight: bold
-        &:hover
-          color: #261909
-          background-color: #F2D022
 
 footer
   display: flex

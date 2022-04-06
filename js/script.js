@@ -1,8 +1,7 @@
 const quantidade = document.getElementById("quantidade")
 const gerar = document.getElementById("gerar")
 const limpar = document.getElementById("limpar")
-const ul = document.querySelector(".lista-numeros")
-let saida = document.getElementById("saida")
+const ul = document.getElementById('lista-numeros')
 
 
 function sorteio(q) {
@@ -19,15 +18,19 @@ function sorteio(q) {
 }
 
 function addLi() {
-  q = quantidade.value
-  a = sorteio(q)
+  let q = quantidade.value
+  if (q < 6 || q > 15) {
+    alert('Quantidade Inválida de Números!')
+    return
+  }
+  let s = sorteio(q)
   for(let i = 0; i < q; i++) {
     const li = document.createElement('li')
     li.classList.add('lista-item')
-    if(a[i] < 10) {
-      li.textContent = `0${a[i]}`
+    if(s[i] < 10) {
+      li.textContent = `0${s[i]}`
     } else {
-      li.textContent = `${a[i]}`
+      li.textContent = `${s[i]}`
     }
     ul.appendChild(li)
   }
