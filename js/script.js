@@ -20,7 +20,7 @@ function sorteio(q) {
 function addLi() {
   let q = quantidade.value
   if (q < 6 || q > 15) {
-    alert('Quantidade Inválida de Números!')
+    alert('Quantidade Inválida de Números! Na Mega-Sena você pode Jogar de 6 até 15 Números.')
     return
   }
   let s = sorteio(q)
